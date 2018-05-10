@@ -52,7 +52,7 @@ public class Controller {
             desktopView.getFindingBridgeProgressBar().setVisible(false);
             AccessPointList accessPointList = new AccessPointList(accessPointsList, instance);
             accessPointList.setVisible(true);
-            accessPointList.setLocationRelativeTo(null);  // Centre the AccessPointList Frame
+            accessPointList.setLocationRelativeTo(null);  // Center the AccessPointList Frame
         }
 
         @Override
@@ -166,7 +166,7 @@ public class Controller {
         if (lightColoursFrame == null) {
             lightColoursFrame = new LightColoursFrame(); 
         }
-        lightColoursFrame.setLocationRelativeTo(null); // Centre window
+        lightColoursFrame.setLocationRelativeTo(null); // Center window
         lightColoursFrame.setVisible(true);
     }
     
