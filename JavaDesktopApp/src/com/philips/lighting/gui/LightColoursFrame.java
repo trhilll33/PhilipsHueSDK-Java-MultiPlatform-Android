@@ -98,6 +98,10 @@ public class LightColoursFrame extends JFrame  {
                 String lightIdentifer = allLights.get(selectedIndex).getIdentifier();
                 
                 PHLightState lightState = new PHLightState();
+                if(!allLights.get(selectedIndex).getLastKnownLightState().isOn())
+                {
+                    lightState.setOn(true);
+                }
                 float xy[] = PHUtilities.calculateXYFromRGB(lightColour.getRed(), lightColour.getGreen(), lightColour.getBlue(), "LCT001");
                 lightState.setX(xy[0]);
                 lightState.setY(xy[1]);
